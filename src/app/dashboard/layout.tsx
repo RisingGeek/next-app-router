@@ -1,3 +1,6 @@
+"use client"
+
+import { useSelectedLayoutSegment } from "next/navigation";
 import { ReactNode } from "react";
 
 interface IDashboardProps {
@@ -6,6 +9,8 @@ interface IDashboardProps {
 
 export default function DashboardLayout(props: IDashboardProps) {
   const { children } = props;
+  const segment = useSelectedLayoutSegment();
+  console.log("active route segment is", segment)
 
   return (
     <section>
