@@ -10,7 +10,7 @@ interface IDashboardProps {
 export default function DashboardLayout(props: IDashboardProps) {
   const { children } = props;
   const segment = useSelectedLayoutSegment();
-  console.log("active route segment is", segment)
+  // console.log("active route segment is", segment)
 
   return (
     <section>
